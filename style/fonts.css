@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'neris';
+    src: url('../fonts/neris-black-webfont.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neris';
+    src: url('../fonts/neris-light-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neris';
+    src: url('../fonts/neris-semibold-webfont.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neris';
+    src: url('../fonts/neris-thin-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+
+}

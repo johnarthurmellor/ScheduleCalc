@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/app_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="scripts/script.js"></script>
+    <title>ScheduleCalc</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="img/title-img.svg" alt="">
+        <h1 class="header__title">ScheduleCALC</h1>
+    </header>
+    <main class="main">
+        <section class="main__content">
+            <div class="main__left">
+                <div class="main__data-input">
+                    <div class="main__data-date-of-begin error-block">
+                        <span class="main__data-date-of-begin-error error-message">Введите дату начала!</span>
+                        <p class="main__label">Укажите дату начала семестра:</p>
+                    </div>
+                    <input class="main__date-picker main__date-picker_start" type="date" name="" id="">
+                </div>
+                <div class="main__data-input">
+                    <div class="main__data-date-of-end error-block">
+                        <span class="main__data-date-of-end-error error-message">Введите дату окончания!</span>
+                        <p class="main__label">Укажите дату окончания семестра:</p>
+                    </div>
+                    <input class="main__date-picker main__date-picker_end" type="date" name="" id="">
+                </div>
+                <div class="main__data-input">
+                    <div class="main__data-count-of-hours error-block">
+                        <span class="main__data-count-of-hours-error error-message">Введите количество часов
+                            дисциплины!</span>
+                        <p class="main__label">Укажите кол-во часов дисциплины:</p>
+                    </div>
+                    <input class="main__number-picker main__hours" type="number" step="1" min="1" max="200" name=""
+                        id="">
+                </div>
+                <div class="main__data-input">
+                    <div class="main__data-week-type error-block">
+                        <span class="main__data-week-type-error error-message">Укажите тип недели!</span>
+                        <p class="main__label">Укажите неделю начала семестра:</p>
+                    </div>
+                    <div class="main__label-container">
+                        <label class="main__week-type-picker">
+                            <p class="main__label-title">Верхняя неделя</p>
+                            <input class="main__week" type="radio" name="week" value="upper">
+                        </label>
+                        <label class="main__week-type-picker">
+                            <p class="main__label-title">Нижняя неделя&nbsp;</p>
+                            <input class="main__week" type="radio" name="week" value="lower">
+                        </label>
+                    </div>
+                </div>
+                <div class="main__shedule">
+                    <div class="main__data-count-of-subjects error-block">
+                        <span class="main__data-count-of-subjects-error error-message">Укажите количество
+                            занятий!</span>
+                    </div>
+                    <form class="main__help-block">
+                        <table class="main__table">
+                            <caption>
+                                <le class="main__shedule-title">Количество занятий</le>
+                            </caption>
+                            <thead>
+                                <th class="table__column-head">День недели</th>
+                                <th class="table__column-head">Верхняя неделя</th>
+                                <th class="table__column-head">Нижняя неделя</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Понедельник:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-monday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-monday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Вторник:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-tuesday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-tuesday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Среда:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-wednesday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-wednesday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Четверг:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-thursday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-thursday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Пятница:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-friday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-friday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Суббота:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-saturday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-saturday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="main__day">Воскресенье:</p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="upper-sunday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                    <td class="main__td-counter">
+                                        <input class="main__day-count" type="range" step="1" min="0" max="6" value="0"
+                                            name="lower-sunday">
+                                        <p class="main__counter"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="main__right">
+                <div class="main__days-off">
+                    <div class="main__data-input">
+                        <p class="main__label">Укажите праздничные дни:</p>
+                        <input class="main__date-picker main__day-off-picker" type="date">
+                    </div>
+                    <div class="main__days-off-controls">
+                        <button class="main__day-off-btn">Добавить выходной день</button>
+                        <ul class="main__days-off-list"></ul>
+                        <button class="main__clear-days-off-list">Очистить список</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main__btn-container">
+            <button class="main__make-schedule-btn" type="submit">Составить график занятий</button>
+            <button class="main__make-schedule-btn_reset" type="reset">Составить новый график занятий</button>
+        </div>
+        <section class="result">
+            <div class="result__container">
+                <div class="schedule__error"></div>
+                <div class="schedule__container schedule">
+                    <table class="schedule__table">
+                        <thead class="schedule__thead">
+                            <tr>
+                                <th>
+                                    Месяц
+                                </th>
+                                <th>
+                                    Дата
+                                </th>
+                                <th>
+                                    День недели
+                                </th>
+                                <th>
+                                    Кол-во пар
+                                </th>
+                                <th>
+                                    Тип недели
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="schedule__tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
